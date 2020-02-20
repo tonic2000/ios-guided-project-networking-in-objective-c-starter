@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
+		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
+		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
+		BDFC8F8B23FDA09F00A39B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8F8923FDA09F00A39B21 /* Main.storyboard */; };
+		BDFC8F8D23FDA0A100A39B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */; };
+		BDFC8F9023FDA0A100A39B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */; };
+		BDFC8F9323FDA0A100A39B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F9223FDA0A100A39B21 /* main.m */; };
+		BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */; };
+		BDFC8FA823FDA0C800A39B21 /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FA723FDA0C800A39B21 /* Quake.json */; };
+		BDFC8FA923FDA0C800A39B21 /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FA723FDA0C800A39B21 /* Quake.json */; };
+		BDFC8FAB23FDA0DA00A39B21 /* Quakes.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */; };
+		BDFC8FAC23FDA0DA00A39B21 /* Quakes.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */; };
+		BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */; };
+		BDFC8FB423FDA12B00A39B21 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */; };
+		BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FAF23FDA12B00A39B21 /* LSILog.m */; };
+		BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FAF23FDA12B00A39B21 /* LSILog.m */; };
+		BDFC8FB723FDA12B00A39B21 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */; };
+		BDFC8FB823FDA12B00A39B21 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */; };
+		BDFC8FBD23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */; };
+		BDFC8FBE23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */; };
+		BDFC8FC123FDAFBA00A39B21 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */; };
+		BDFC8FC223FDAFBA00A39B21 /* LSIQuake.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */; };
+		BDFC8FC423FDB3CE00A39B21 /* LSIQuakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FC323FDB3CE00A39B21 /* LSIQuakeTests.m */; };
+		BDFC8FCB23FDC35900A39B21 /* LSIQuakeResults.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */; };
+		BDFC8FCC23FDC35900A39B21 /* LSIQuakeResults.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDFC8F9923FDA0A100A39B21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDFC8F7523FDA09F00A39B21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFC8F7C23FDA09F00A39B21;
+			remoteInfo = "Quakes-Objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BDFC8F8623FDA09F00A39B21 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BDFC8F8723FDA09F00A39B21 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BDFC8F8A23FDA09F00A39B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDFC8F8F23FDA0A100A39B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDFC8F9123FDA0A100A39B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFC8F9223FDA0A100A39B21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDFC8F9823FDA0A100A39B21 /* Quakes-ObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quakes-ObjcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quakes_ObjcTests.m; sourceTree = "<group>"; };
+		BDFC8F9E23FDA0A100A39B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDFC8FA723FDA0C800A39B21 /* Quake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quake.json; sourceTree = "<group>"; };
+		BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quakes.json; sourceTree = "<group>"; };
+		BDFC8FAD23FDA12B00A39B21 /* LSILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSILog.h; sourceTree = "<group>"; };
+		BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIFileHelper.m; sourceTree = "<group>"; };
+		BDFC8FAF23FDA12B00A39B21 /* LSILog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSILog.m; sourceTree = "<group>"; };
+		BDFC8FB023FDA12B00A39B21 /* LSIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIErrors.h; sourceTree = "<group>"; };
+		BDFC8FB123FDA12B00A39B21 /* LSIFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
+		BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIErrors.m; sourceTree = "<group>"; };
+		BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFirstResponder.h; sourceTree = "<group>"; };
+		BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFirstResponder.m; sourceTree = "<group>"; };
+		BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuake.h; sourceTree = "<group>"; };
+		BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuake.m; sourceTree = "<group>"; };
+		BDFC8FC323FDB3CE00A39B21 /* LSIQuakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeTests.m; sourceTree = "<group>"; };
+		BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuakeResults.h; sourceTree = "<group>"; };
+		BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeResults.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDFC8F7A23FDA09F00A39B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFC8F9523FDA0A100A39B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDFC8F7423FDA09F00A39B21 = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F7F23FDA09F00A39B21 /* Quakes-Objc */,
+				BDFC8F9B23FDA0A100A39B21 /* Quakes-ObjcTests */,
+				BDFC8F7E23FDA09F00A39B21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDFC8F7E23FDA09F00A39B21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */,
+				BDFC8F9823FDA0A100A39B21 /* Quakes-ObjcTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDFC8F7F23FDA09F00A39B21 /* Quakes-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
+				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
+				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
+				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
+				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
+				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
+				BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */,
+				BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */,
+				BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */,
+				BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */,
+				BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */,
+				BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */,
+				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
+				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
+				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
+				BDFC8F9123FDA0A100A39B21 /* Info.plist */,
+				BDFC8FBA23FDA13F00A39B21 /* JSON */,
+				BDFC8FB923FDA12F00A39B21 /* LambdaSDK */,
+				BDFC8F9223FDA0A100A39B21 /* main.m */,
+			);
+			path = "Quakes-Objc";
+			sourceTree = "<group>";
+		};
+		BDFC8F9B23FDA0A100A39B21 /* Quakes-ObjcTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */,
+				BDFC8FC323FDB3CE00A39B21 /* LSIQuakeTests.m */,
+				BDFC8F9E23FDA0A100A39B21 /* Info.plist */,
+			);
+			path = "Quakes-ObjcTests";
+			sourceTree = "<group>";
+		};
+		BDFC8FB923FDA12F00A39B21 /* LambdaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FB023FDA12B00A39B21 /* LSIErrors.h */,
+				BDFC8FB223FDA12B00A39B21 /* LSIErrors.m */,
+				BDFC8FB123FDA12B00A39B21 /* LSIFileHelper.h */,
+				BDFC8FAE23FDA12B00A39B21 /* LSIFileHelper.m */,
+				BDFC8FAD23FDA12B00A39B21 /* LSILog.h */,
+				BDFC8FAF23FDA12B00A39B21 /* LSILog.m */,
+			);
+			path = LambdaSDK;
+			sourceTree = "<group>";
+		};
+		BDFC8FBA23FDA13F00A39B21 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FA723FDA0C800A39B21 /* Quake.json */,
+				BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDFC8F7C23FDA09F00A39B21 /* Quakes-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFC8FA123FDA0A100A39B21 /* Build configuration list for PBXNativeTarget "Quakes-Objc" */;
+			buildPhases = (
+				BDFC8F7923FDA09F00A39B21 /* Sources */,
+				BDFC8F7A23FDA09F00A39B21 /* Frameworks */,
+				BDFC8F7B23FDA09F00A39B21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quakes-Objc";
+			productName = "Quakes-Objc";
+			productReference = BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDFC8F9723FDA0A100A39B21 /* Quakes-ObjcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDFC8FA423FDA0A100A39B21 /* Build configuration list for PBXNativeTarget "Quakes-ObjcTests" */;
+			buildPhases = (
+				BDFC8F9423FDA0A100A39B21 /* Sources */,
+				BDFC8F9523FDA0A100A39B21 /* Frameworks */,
+				BDFC8F9623FDA0A100A39B21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDFC8F9A23FDA0A100A39B21 /* PBXTargetDependency */,
+			);
+			name = "Quakes-ObjcTests";
+			productName = "Quakes-ObjcTests";
+			productReference = BDFC8F9823FDA0A100A39B21 /* Quakes-ObjcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDFC8F7523FDA09F00A39B21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lambda, Inc";
+				TargetAttributes = {
+					BDFC8F7C23FDA09F00A39B21 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BDFC8F9723FDA0A100A39B21 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BDFC8F7C23FDA09F00A39B21;
+					};
+				};
+			};
+			buildConfigurationList = BDFC8F7823FDA09F00A39B21 /* Build configuration list for PBXProject "Quakes-Objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDFC8F7423FDA09F00A39B21;
+			productRefGroup = BDFC8F7E23FDA09F00A39B21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDFC8F7C23FDA09F00A39B21 /* Quakes-Objc */,
+				BDFC8F9723FDA0A100A39B21 /* Quakes-ObjcTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDFC8F7B23FDA09F00A39B21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFC8FAB23FDA0DA00A39B21 /* Quakes.json in Resources */,
+				BDFC8F9023FDA0A100A39B21 /* LaunchScreen.storyboard in Resources */,
+				BDFC8FA823FDA0C800A39B21 /* Quake.json in Resources */,
+				BDFC8F8D23FDA0A100A39B21 /* Assets.xcassets in Resources */,
+				BDFC8F8B23FDA09F00A39B21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFC8F9623FDA0A100A39B21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFC8FA923FDA0C800A39B21 /* Quake.json in Resources */,
+				BDFC8FAC23FDA0DA00A39B21 /* Quakes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDFC8F7923FDA09F00A39B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFC8FBD23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */,
+				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
+				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
+				BDFC8FCB23FDC35900A39B21 /* LSIQuakeResults.m in Sources */,
+				BDFC8FC123FDAFBA00A39B21 /* LSIQuake.m in Sources */,
+				BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */,
+				BDFC8FB723FDA12B00A39B21 /* LSIErrors.m in Sources */,
+				BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */,
+				BDFC8F9323FDA0A100A39B21 /* main.m in Sources */,
+				BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDFC8F9423FDA0A100A39B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFC8FBE23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */,
+				BDFC8FB423FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
+				BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */,
+				BDFC8FC223FDAFBA00A39B21 /* LSIQuake.m in Sources */,
+				BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */,
+				BDFC8FCC23FDC35900A39B21 /* LSIQuakeResults.m in Sources */,
+				BDFC8FC423FDB3CE00A39B21 /* LSIQuakeTests.m in Sources */,
+				BDFC8FB823FDA12B00A39B21 /* LSIErrors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDFC8F9A23FDA0A100A39B21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDFC8F7C23FDA09F00A39B21 /* Quakes-Objc */;
+			targetProxy = BDFC8F9923FDA0A100A39B21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDFC8F8923FDA09F00A39B21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFC8F8A23FDA09F00A39B21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDFC8F8F23FDA0A100A39B21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDFC8F9F23FDA0A100A39B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BDFC8FA023FDA0A100A39B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDFC8FA223FDA0A100A39B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Quakes-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDFC8FA323FDA0A100A39B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Quakes-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDFC8FA523FDA0A100A39B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Quakes-ObjcTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Quakes-ObjcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quakes-Objc.app/Quakes-Objc";
+			};
+			name = Debug;
+		};
+		BDFC8FA623FDA0A100A39B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "Quakes-ObjcTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Quakes-ObjcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quakes-Objc.app/Quakes-Objc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDFC8F7823FDA09F00A39B21 /* Build configuration list for PBXProject "Quakes-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFC8F9F23FDA0A100A39B21 /* Debug */,
+				BDFC8FA023FDA0A100A39B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFC8FA123FDA0A100A39B21 /* Build configuration list for PBXNativeTarget "Quakes-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFC8FA223FDA0A100A39B21 /* Debug */,
+				BDFC8FA323FDA0A100A39B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDFC8FA423FDA0A100A39B21 /* Build configuration list for PBXNativeTarget "Quakes-ObjcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDFC8FA523FDA0A100A39B21 /* Debug */,
+				BDFC8FA623FDA0A100A39B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDFC8F7523FDA09F00A39B21 /* Project object */;
+}
