@@ -1,0 +1,40 @@
+{
+  "type": "Feature",
+  "properties": {
+    "mag": null,
+    "place": "10km NW of The Geysers, CA",
+    "time": 1581846000490,
+    "updated": 1582184345942,
+    "tz": -480,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc71111989",
+    "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc71111989&format=geojson",
+    "felt": null,
+    "cdi": null,
+    "mmi": null,
+    "alert": null,
+    "status": "reviewed",
+    "tsunami": 0,
+    "sig": 0,
+    "net": "nc",
+    "code": "71111989",
+    "ids": ",nc71111989,",
+    "sources": ",nc,",
+    "types": ",focal-mechanism,geoserve,nearby-cities,origin,phase-data,scitech-link,",
+    "nst": 41,
+    "dmin": 0.001513,
+    "rms": 0.029999999999999999,
+    "gap": 75,
+    "magType": null,
+    "type": "earthquake",
+    "title": "M ? - 10km NW of The Geysers, CA"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.8368333,
+      38.837499999999999,
+      1.4399999999999999
+    ]
+  },
+  "id": "nc71111989"
+}
