@@ -97,6 +97,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD5CDCFE2423C6C90062E885 /* Quake Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */,
+				BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */,
+				BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */,
+				BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */,
+			);
+			path = "Quake Model";
+			sourceTree = "<group>";
+		};
+		BD5CDCFF2423C6D30062E885 /* Demo Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
+				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
+				BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */,
+				BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */,
+			);
+			path = "Demo Content";
+			sourceTree = "<group>";
+		};
 		BDFC8F7423FDA09F00A39B21 = {
 			isa = PBXGroup;
 			children = (
@@ -122,14 +144,8 @@
 				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
 				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
 				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
-				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
-				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
-				BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */,
-				BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */,
-				BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */,
-				BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */,
-				BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */,
-				BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */,
+				BD5CDCFF2423C6D30062E885 /* Demo Content */,
+				BD5CDCFE2423C6C90062E885 /* Quake Model */,
 				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
 				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
 				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
