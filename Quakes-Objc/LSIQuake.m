@@ -11,11 +11,9 @@
 @implementation LSIQuake
 
 // Control + I = reindent
-- (instancetype)initWithMagnitude:(double)magnitude
+- (instancetype)initWithMagnitude:(NSNumber *)magnitude
                             place:(NSString *)place
                              time:(NSDate *)time
-                            alert:(NSString *)alert
-                             type:(NSString *)type
                          latitude:(double)latitude
                         longitude:(double)longitude {
     self = [super init];
@@ -23,8 +21,6 @@
         _magnitude = magnitude;
         _place = [place copy];
         _time = time;
-        _alert = [alert copy];
-        _type = [type copy];
         _latitude = latitude;
         _longitude = longitude;
     }
@@ -44,14 +40,7 @@
     // NSNumber
     NSNumber *timeNumber = properties[@"time"];
     NSDate *time = [NSDate dateWithTimeIntervalSince1970:timeNumber.longValue / 1000.0];
-    
-    // Alert can be "green", "yellow", "red", or null
-    NSString *alert = properties[@"alert"]; // not required! (may be NSNull)
-    if ([alert isKindOfClass:[NSNull class]]) {
-        alert = nil; // Note: You may want to use an @"" instead of nil
-    }
-    NSString *type = properties[@"type"];
-    
+        
     NSDictionary *geometry = dictionary[@"geometry"];
     NSArray *coordinates = geometry[@"coordinates"];
     
@@ -71,13 +60,17 @@
         NSLog(@"Mag is null: %@", dictionary);
     }
     
-    // alert is optional (can be null) so we won't enforce non-null
-    if (!(magnitudeNumber && place && timeNumber && type && latitudeNumber && longitudeNumber)) {
+    // magnitude is optional
+    if (!(place || timeNumber || latitudeNumber || longitudeNumber)) {
         return nil;  // failable init if missing required
     }
     
     // return the object using the default init
-    self = [self initWithMagnitude:magnitudeNumber.doubleValue place:place time:time alert:alert type:type latitude:latitudeNumber.doubleValue longitude:longitudeNumber.doubleValue];
+    self = [self initWithMagnitude:magnitudeNumber
+                             place:place
+                              time:time
+                          latitude:latitudeNumber.doubleValue
+                         longitude:longitudeNumber.doubleValue];
     
     return self;
     

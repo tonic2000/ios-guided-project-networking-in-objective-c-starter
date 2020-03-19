@@ -15,24 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 // magnitude
 // place
 // time
-// alert ("red", "green", "yellow", null)
-// type
 // latitude
 // longitude
 
-@property (nonatomic, readonly) double magnitude;
+@property (nonatomic, readonly) NSNumber *magnitude; // can be nil (N/A)
 @property (nonatomic, readonly, copy) NSString *place;
 @property (nonatomic, readonly) NSDate *time;
-@property (nonatomic, readonly, copy) NSString *alert;
-@property (nonatomic, readonly, copy) NSString *type;
 @property (nonatomic, readonly) double latitude;
 @property (nonatomic, readonly) double longitude;
 
-- (instancetype)initWithMagnitude:(double)magnitude
+- (instancetype)initWithMagnitude:(NSNumber *)magnitude
                             place:(NSString *)place
                              time:(NSDate *)time
-                            alert:(NSString *)alert
-                             type:(NSString *)type
                          latitude:(double)latitude
                         longitude:(double)longitude;
 

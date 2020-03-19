@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD33944E23FF22FC0048AA4C /* QuakeWithNullMag.json in Resources */ = {isa = PBXBuildFile; fileRef = BD33944D23FF22FC0048AA4C /* QuakeWithNullMag.json */; };
+		BD5CDCFD2423C5C10062E885 /* LSIQuakeResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5CDCFC2423C5C10062E885 /* LSIQuakeResultsTests.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		BDFC8F8D23FDA0A100A39B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */; };
 		BDFC8F9023FDA0A100A39B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */; };
 		BDFC8F9323FDA0A100A39B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F9223FDA0A100A39B21 /* main.m */; };
-		BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */; };
 		BDFC8FA823FDA0C800A39B21 /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FA723FDA0C800A39B21 /* Quake.json */; };
 		BDFC8FA923FDA0C800A39B21 /* Quake.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FA723FDA0C800A39B21 /* Quake.json */; };
 		BDFC8FAB23FDA0DA00A39B21 /* Quakes.json in Resources */ = {isa = PBXBuildFile; fileRef = BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */; };
@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		BD33944D23FF22FC0048AA4C /* QuakeWithNullMag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuakeWithNullMag.json; sourceTree = "<group>"; };
+		BD5CDCFC2423C5C10062E885 /* LSIQuakeResultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeResultsTests.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		BDFC8F9123FDA0A100A39B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDFC8F9223FDA0A100A39B21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDFC8F9823FDA0A100A39B21 /* Quakes-ObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quakes-ObjcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quakes_ObjcTests.m; sourceTree = "<group>"; };
 		BDFC8F9E23FDA0A100A39B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDFC8FA723FDA0C800A39B21 /* Quake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quake.json; sourceTree = "<group>"; };
 		BDFC8FAA23FDA0DA00A39B21 /* Quakes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quakes.json; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 		BDFC8F9B23FDA0A100A39B21 /* Quakes-ObjcTests */ = {
 			isa = PBXGroup;
 			children = (
-				BDFC8F9C23FDA0A100A39B21 /* Quakes_ObjcTests.m */,
 				BDFC8FC323FDB3CE00A39B21 /* LSIQuakeTests.m */,
+				BD5CDCFC2423C5C10062E885 /* LSIQuakeResultsTests.m */,
 				BDFC8F9E23FDA0A100A39B21 /* Info.plist */,
 			);
 			path = "Quakes-ObjcTests";
@@ -300,8 +300,8 @@
 				BDFC8FB423FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8FC223FDAFBA00A39B21 /* LSIQuake.m in Sources */,
-				BDFC8F9D23FDA0A100A39B21 /* Quakes_ObjcTests.m in Sources */,
 				BDFC8FCC23FDC35900A39B21 /* LSIQuakeResults.m in Sources */,
+				BD5CDCFD2423C5C10062E885 /* LSIQuakeResultsTests.m in Sources */,
 				BDFC8FC423FDB3CE00A39B21 /* LSIQuakeTests.m in Sources */,
 				BDFC8FB823FDA12B00A39B21 /* LSIErrors.m in Sources */,
 			);
