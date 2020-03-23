@@ -7,7 +7,9 @@
 
 #import "LSIErrors.h"
 
-NSString * const LSIErrorDomain = @"LSIErrorDomain";
+// TODO: The domain should be reverse DNS for your app or framework
+// com.CompanyName.ProductOrFrameworkName to make it unique
+NSString * const LSIErrorDomain = @"com.LambdaSchool.Quakes-Objc";
 
 NSError *errorWithMessage(NSString *message, NSInteger errorCode) {
     NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : message };
