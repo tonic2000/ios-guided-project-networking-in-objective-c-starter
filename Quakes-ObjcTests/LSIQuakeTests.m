@@ -42,7 +42,7 @@
     XCTAssertEqualWithAccuracy(-116.7776667, quake.longitude, 0.0001);
 }
 
-- (void)testQuakeParsingDiscardsNullMagnitudeQuake {
+- (void)testQuakeParsingNilMagnitudeIsNil {
     
     NSData *quakeData = loadFile(@"QuakeWithNullMag.json", [LSIQuakeTests class]);
     //    NSLog(@"quake: %@", quakeData); // Remove print statements in final code, only for "sanity check" when implementing

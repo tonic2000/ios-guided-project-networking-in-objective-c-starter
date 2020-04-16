@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6DFF22F2448BF1A00DFCDB7 /* LSIQuakeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFF22E2448BF1A00DFCDB7 /* LSIQuakeFetcher.m */; };
+		B6DFF2302448BF1A00DFCDB7 /* LSIQuakeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFF22E2448BF1A00DFCDB7 /* LSIQuakeFetcher.m */; };
+		B6DFF2332448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFF2322448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m */; };
+		B6DFF2342448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFF2322448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m */; };
+		B6DFF2372448CCDF00DFCDB7 /* LSIQuakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFF2362448CCDF00DFCDB7 /* LSIQuakeViewController.m */; };
 		BD33944E23FF22FC0048AA4C /* QuakeWithNullMag.json in Resources */ = {isa = PBXBuildFile; fileRef = BD33944D23FF22FC0048AA4C /* QuakeWithNullMag.json */; };
 		BD5CDCFD2423C5C10062E885 /* LSIQuakeResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5CDCFC2423C5C10062E885 /* LSIQuakeResultsTests.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
@@ -46,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6DFF22D2448BF1A00DFCDB7 /* LSIQuakeFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuakeFetcher.h; sourceTree = "<group>"; };
+		B6DFF22E2448BF1A00DFCDB7 /* LSIQuakeFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeFetcher.m; sourceTree = "<group>"; };
+		B6DFF2312448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateInterval+LSIDayInterval.h"; sourceTree = "<group>"; };
+		B6DFF2322448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateInterval+LSIDayInterval.m"; sourceTree = "<group>"; };
+		B6DFF2352448CCDF00DFCDB7 /* LSIQuakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIQuakeViewController.h; sourceTree = "<group>"; };
+		B6DFF2362448CCDF00DFCDB7 /* LSIQuakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeViewController.m; sourceTree = "<group>"; };
 		BD33944D23FF22FC0048AA4C /* QuakeWithNullMag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuakeWithNullMag.json; sourceTree = "<group>"; };
 		BD5CDCFC2423C5C10062E885 /* LSIQuakeResultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIQuakeResultsTests.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +151,12 @@
 		BDFC8F7F23FDA09F00A39B21 /* Quakes-Objc */ = {
 			isa = PBXGroup;
 			children = (
+				B6DFF22D2448BF1A00DFCDB7 /* LSIQuakeFetcher.h */,
+				B6DFF2312448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.h */,
+				B6DFF2352448CCDF00DFCDB7 /* LSIQuakeViewController.h */,
+				B6DFF2362448CCDF00DFCDB7 /* LSIQuakeViewController.m */,
+				B6DFF2322448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m */,
+				B6DFF22E2448BF1A00DFCDB7 /* LSIQuakeFetcher.m */,
 				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
 				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
 				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
@@ -298,10 +315,13 @@
 				BDFC8FBD23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */,
 				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
+				B6DFF22F2448BF1A00DFCDB7 /* LSIQuakeFetcher.m in Sources */,
+				B6DFF2332448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m in Sources */,
 				BDFC8FCB23FDC35900A39B21 /* LSIQuakeResults.m in Sources */,
 				BDFC8FC123FDAFBA00A39B21 /* LSIQuake.m in Sources */,
 				BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */,
 				BDFC8FB723FDA12B00A39B21 /* LSIErrors.m in Sources */,
+				B6DFF2372448CCDF00DFCDB7 /* LSIQuakeViewController.m in Sources */,
 				BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */,
 				BDFC8F9323FDA0A100A39B21 /* main.m in Sources */,
 				BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */,
@@ -312,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DFF2342448C2EE00DFCDB7 /* NSDateInterval+LSIDayInterval.m in Sources */,
 				BDFC8FBE23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */,
 				BDFC8FB423FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
+				B6DFF2302448BF1A00DFCDB7 /* LSIQuakeFetcher.m in Sources */,
 				BDFC8FB623FDA12B00A39B21 /* LSILog.m in Sources */,
 				BDFC8FC223FDAFBA00A39B21 /* LSIQuake.m in Sources */,
 				BDFC8FCC23FDC35900A39B21 /* LSIQuakeResults.m in Sources */,
